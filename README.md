@@ -1,6 +1,6 @@
 # Mangalam HDPE — Product Landing Page
 
-A responsive product page built with vanilla HTML, CSS, and JavaScript. No frameworks or libraries.
+A responsive product page built with vanilla HTML, CSS and JavaScript. No frameworks or libraries.
 
 ---
 
@@ -36,20 +36,19 @@ project/
 
 ## Responsive Breakpoints
 
-| Screen width | Top / Bottom | Left / Right |
-|---|---|---|
-| < 768px | 48px | 16px |
-| ≥ 768px | 80px | 48px |
-| ≥ 1024px | 80px | 60px |
-| ≥ 1280px | 100px | 100px |
-| ≥ 1600px | 100px | fluid (content capped at 1240px) |
+| Screen width | Top / Bottom | Left / Right                     |
+| ------------ | ------------ | -------------------------------- |
+| < 768px      | 48px         | 16px                             |
+| ≥ 768px      | 80px         | 48px                             |
+| ≥ 1024px     | 80px         | 60px                             |
+| ≥ 1280px     | 100px        | 100px                            |
+| ≥ 1600px     | 100px        | fluid (content capped at 1240px) |
 
 ---
 
 ## How to Run
 
 Open `index.html` directly in a browser — no build step or server needed.
-
 
 ---
 

@@ -458,7 +458,7 @@ function setupTestimonialCards() {
   const testimonialData = [
     {
       image: `${ASSET_PATH}icon-performance.svg`,
-      headline: "Excellent support for specialized applications.",
+      headline: "Excellent support for specialized applications",
       body: "The durability and performance of Meera's fishnet processing equipment has significantly improved our marine product quality. Excellent support for specialized applications.",
       author: "Carlos Mendoza",
       role: "Operations Manager",
@@ -550,8 +550,8 @@ function setupContactForm() {
    10. MODAL DIALOGS
    Two modals share the same open / close logic.
 
-  Brochure modal  (#brochure-modal-backdrop)
-  Quote / Callback modal  (#quote-modal-backdrop)
+  Brochure modal  
+  Quote / Callback modal
    ───────────────────────────────────────────── */
 function setupModalDialogs() {
   const BROCHURE_MODAL = "brochure-modal-backdrop";
@@ -597,10 +597,7 @@ function setupModalDialogs() {
     .getElementById("quote-modal-close")
     ?.addEventListener("click", () => closeModal(QUOTE_MODAL));
 
-  /* ── Brochure modal triggers ──
-     - "Download Full Technical Datasheet" (Specs section, .btn-outline-white)
-     - All "Download PDF" resource buttons
-     - "Request Catalogue" (FAQ section)                                    */
+  
   const bindBrochure = (el) =>
     el?.addEventListener("click", () => openModal(BROCHURE_MODAL));
 
@@ -613,11 +610,6 @@ function setupModalDialogs() {
     if (btn.textContent.trim() === "Request Catalogue") bindBrochure(btn);
   });
 
-  /* ── Quote / Callback modal triggers ──
-     - "Request a Quote"   (Features section)
-     - "Get Custom Quote"  (Hero CTA + Sticky price bar)
-     - "Talk to an Expert" (Solutions CTA)
-     - "Contact Us"        (Nav buttons — opens quote form)               */
   const bindQuote = (el) =>
     el?.addEventListener("click", () => openModal(QUOTE_MODAL));
 
